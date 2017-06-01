@@ -4,6 +4,10 @@ This is a demo project aimed to give life to an old toy, implanting a raspberryp
 
 <img src="front.jpg" alt="front" class="inline"/>
 
+## Demo Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dWwAfJSV2rI" frameborder="0" allowfullscreen></iframe>
+
 ## Hardware
 
 The hardware I used for this project is:
