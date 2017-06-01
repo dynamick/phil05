@@ -2,6 +2,8 @@
 
 This is a demo project aimed to give life to an old toy, implanting a raspberrypi inside.
 
+<img src="docs/front.jpg" alt="front" class="inline"/>
+
 ## Hardware
 
 The hardware I used for this project is:
