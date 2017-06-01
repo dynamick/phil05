@@ -7,12 +7,12 @@ This is a demo project aimed to give life to an old toy, implanting a raspberryp
 ## Hardware
 
 The hardware I used for this project is:
-- Old motorized toy
-- RaspberryPi 3 model b
-- Raspberry power bank
-- Sonic sensor hc-sr04
-- L298 Dual H-Bridge Motor Driver (DC and Stepper Motors)
-- Raspicam
+- [Old motorized toy](http://amzn.to/2redi0O)
+- [RaspberryPi 3 model b](http://amzn.to/2sqIQ19)
+- [Lithium Battery Pack Expansion Board](http://amzn.to/2qJ58dh)
+- [UltraSonic module hc-sr04](http://amzn.to/2qJ7poG)
+- [L298 Dual H-Bridge Motor Driver (DC and Stepper Motors)](http://amzn.to/2regAB3)
+- [Raspicam](http://amzn.to/2sqLEvf)
 - breadboard
 - a bunch of wires
 
