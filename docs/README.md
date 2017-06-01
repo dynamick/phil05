@@ -2,7 +2,7 @@
 
 This is a demo project aimed to give life to an old toy, implanting a raspberrypi inside.
 
-<img src="docs/front.jpg" alt="front" class="inline"/>
+<img src="front.jpg" alt="front" class="inline"/>
 
 ## Hardware
 
@@ -29,6 +29,8 @@ git clone https://github.com/dynamick/phil05
 cd phil05
 sudo npm install
 ```
+
+Make sure to have [motion](http://pingbin.com/2012/12/raspberry-pi-web-cam-server-motion/) up and running so you could see what raspicam is viewing in real-time.
 
 ## Running
 
