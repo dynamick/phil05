@@ -9,11 +9,39 @@ The hardware I used for this project is:
 - RaspberryPi 3 model b
 - Raspberry power bank
 - Sonic sensor hc-sr04
-- raspicam
+- L298 Dual H-Bridge Motor Driver (DC and Stepper Motors)
+- Raspicam
 - breadboard
 - a bunch of wires
 
 ## Software
+
+The software runs on a Raspbian 8 (jessie). The code is developed in nodejs, a promising, popular and fast serverside version of javascript. It just contains two sub-project: 
+- a manual driving via keyboard
+- an autopilot test code using the sonar
+
+## Installation
+
+```bash
+git clone https://github.com/dynamick/phil05
+cd phil05
+sudo npm install
+```
+
+## Running
+
+You could choose the manual driving mode launching:
+```bash
+sudo npm run manual
+```
+
+... or you could try the autopilot using:
+```bash
+sudo npm run autopilot
+```
+
+... or you could lauch both on two console to ibrid command your robot.
+
 
 
 
