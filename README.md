@@ -4,6 +4,10 @@ This is a demo project aimed to give life to an old toy, implanting a raspberryp
 
 <img src="docs/front.jpg" alt="front" class="inline"/>
 
+## Demo Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dWwAfJSV2rI" frameborder="0" allowfullscreen></iframe>
+
 ## Hardware
 
 The hardware I used for this project is:
@@ -30,6 +34,8 @@ cd phil05
 sudo npm install
 ```
 
+Make sure to have [motion](http://pingbin.com/2012/12/raspberry-pi-web-cam-server-motion/) up and running so you could see what raspicam is viewing in real-time.
+
 ## Running
 
 You could choose the manual driving mode launching:
@@ -45,37 +51,3 @@ sudo npm run autopilot
 ... or you could lauch both on two console to ibrid command your robot.
 
 
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dynamick/phil05/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
