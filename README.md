@@ -1,8 +1,22 @@
-## Welcome to GitHub Pages
+## Phil05
 
-You can use the [editor on GitHub](https://github.com/dynamick/phil05/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a demo project aimed to give life to an old toy, implanting a raspberrypi inside.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Hardware
+
+The hardware I used for this project is:
+- Old motorized toy
+- RaspberryPi 3 model b
+- Raspberry power bank
+- Sonic sensor hc-sr04
+- raspicam
+- breadboard
+- a bunch of wires
+
+## Software
+
+
+
 
 ### Markdown
 
