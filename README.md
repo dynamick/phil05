@@ -6,7 +6,7 @@ This is a demo project aimed to give life to an old toy, implanting a raspberryp
 
 ## Demo Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dWwAfJSV2rI" frameborder="0" allowfullscreen></iframe>
+[![Demo Video](http://img.youtube.com/vi/dWwAfJSV2rI/0.jpg)](http://www.youtube.com/watch?v=dWwAfJSV2rI "Demo Video")
 
 ## Hardware
 
