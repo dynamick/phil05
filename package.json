@@ -4,16 +4,24 @@
   "description": "sample code to command a raspberrypi robot",
   "main": "lib/manual.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cache:cleanup": "npm cache clean",
+    "cache:verify": "npm cache verify",
     "compile": "babel src -d lib",
     "execute": "sudo node lib/index.js",
     "autopilot": "npm run compile && npm run execute",
-    "manual": "sudo node src/manual.js"
+    "manual": "sudo node src/manual.js",
+    "lint:dev": "./node_modules/.bin/eslint .",
+    "lint:dev:log": "./node_modules/.bin/eslint . > ./temp/lint.log",
+    "prestart": "",
+    "start": "node lib/index.js",
+    "start:dev": "./node_modules/.bin/nodemon lib/index.js",
+    "postinstall": "",
+    "pretest": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "async": "^2.4.1",
+    "async": "^2.5.0",
+    "debug": "^3.1.0",
     "events": "^1.1.1",
     "keypress": "^0.2.1",
     "mmm-usonic": "^2.5.3",
@@ -21,7 +29,25 @@
     "wiring-pi": "^2.2.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1"
-  }
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.9.0",
+    "semver": "^5.4.1",
+    "nodemon": "^1.12.1"
+  },
+  "engines": {
+    "node": "8.7.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "phil05"
+  },
+  "keywords": [
+    "sample",
+    "node",
+    "raspberrypi",
+    "robot"
+  ],
+  "author": "",
+  "license": "ISC"
 }
