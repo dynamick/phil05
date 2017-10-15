@@ -3,7 +3,6 @@ const async = require('async');
 const keypress = require('keypress');
 
 class Motor {
-
     constructor(motorPin1, motorPin2) {
         // Pi pins for the motor control connection:
         this._motorPin1 = motorPin1;
@@ -62,11 +61,12 @@ class Motor {
     }
 }
 
+
 const [m1_pin1, m1_pin2] = [5,6];
 const [m2_pin1, m2_pin2] = [19,13];
 
-m1 = new Motor(m1_pin1, m1_pin2);
-m2 = new Motor(m2_pin1, m2_pin2);
+const m1 = new Motor(m1_pin1, m1_pin2);
+const m2 = new Motor(m2_pin1, m2_pin2);
 
 // start stopping the robot
 m1.stop();
@@ -81,10 +81,11 @@ console.log("----");
 
 // listen for the "keypress" event
 process.stdin.on('keypress', function (ch, key) {
+    // TODO: check if improve with if/else if, or with a switch ...
     if (key.code == '[A') {
         console.log('FORWARD');
-        m1.forward()
-        m2.forward()
+        m1.forward();
+        m2.forward();
     }
     if (key.code == '[B') {
         console.log('BACKWARD');
@@ -103,15 +104,16 @@ process.stdin.on('keypress', function (ch, key) {
     }
     if (key.name == 'space') {
         console.log('STOP');
-        m1.stop()
-        m2.stop()
+        m1.stop();
+        m2.stop();
     }
-    //console.log('got "keypress"', key);
+    // console.log('got "keypress"', key);
     
     if (key && key.ctrl && key.name == 'c') {
         process.stdin.pause();
     }
 });
+
 
 process.stdin.setRawMode(true);
 process.stdin.resume();

@@ -1,4 +1,5 @@
-import Motor from './motor'
+import Motor from './motor';
+
 const createTimer = require('unitimer');
 const EventEmitter = require('events');
 
@@ -17,12 +18,12 @@ class Driver extends EventEmitter {
     this.obstacle = 30;
     this.max_distance = 100;
 
-    console.log('Driver stay fine!')
+    console.log('Driver stay fine!');
   } // End of constructor
 
   autopilot() {
     var self = this;
-    this.stop()
+    this.stop();
     this.on('free', () => this.forward());
     this.on('obstacle', () => this.turnright(1500));
     this.on('stall', () => {
@@ -53,11 +54,11 @@ class Driver extends EventEmitter {
       this.last_distance = this.distance;
     }
 
-    this.check_environment();
+    this.checkEnvironment();
     this.timer = createTimer().start();
   }
 
-  check_environment() {
+  checkEnvironment() {
     if (this.distance < this.off_distance) {
       if (this.distance > this.obstacle) {
         if (Math.abs(this.speed_avg) < 1) {
@@ -101,8 +102,8 @@ class Driver extends EventEmitter {
   forward(ms = 1000) {
     var self = this;
     var cb = function () {
-      self._motor1.forward()
-      self._motor2.forward()
+      self._motor1.forward();
+      self._motor2.forward();
     };
     return self.lockStatus(ms, 'forward', cb);
   }
@@ -111,32 +112,32 @@ class Driver extends EventEmitter {
     var cb = function () {
       self._motor1.backward();
       self._motor2.backward();
-    }
+    };
     return self.lockStatus(ms, 'backward', cb);
   }
   turnright(ms = 1000) {
     var self = this;
     var cb = function() {
-        self._motor1.forward()
-        self._motor2.backward()
-    }
+        self._motor1.forward();
+        self._motor2.backward();
+    };
     return self.lockStatus(ms, 'right', cb);
   }
   turnleft(ms = 1000) {
     var self = this;
     var cb = function() {
-        self._motor1.backward()
-        self._motor2.forward()
-    }
+        self._motor1.backward();
+        self._motor2.forward();
+    };
     return self.lockStatus(ms, 'left', cb);
   }
   stop() {
     var self = this;
     console.log('stop');
-    self._motor1.stop()
-    self._motor2.stop()
+    self._motor1.stop();
+    self._motor2.stop();
   }
 
 }
 
-export default Driver
+export default Driver;
