@@ -1,4 +1,4 @@
-var usonic = require('mmm-usonic');
+const usonic = require('mmm-usonic');
 const EventEmitter = require('events');
 
 class Sonar  extends EventEmitter  {
@@ -43,4 +43,4 @@ class Sonar  extends EventEmitter  {
 
 } // end of class Sonar
 
-export default Sonar
+export default Sonar;

@@ -1,7 +1,6 @@
 var wpi = require('wiring-pi');
 
 class Motor {
-
   constructor(motorPin1, motorPin2) {
       // Pi pins for the motor control connection:
       this._motorPin1 = motorPin1;
@@ -12,7 +11,7 @@ class Motor {
       // setup the pins on the Pi:
       wpi.pinMode(this._motorPin1, wpi.OUTPUT);
       wpi.pinMode(this._motorPin2, wpi.OUTPUT);
-      console.log('Motors turned on!')
+      console.log('Motors turned on!');
   } // End of constructor
 
     forward() {
@@ -30,4 +29,4 @@ class Motor {
 
 }
 
-export default Motor
+export default Motor;
