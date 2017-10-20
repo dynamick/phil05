@@ -48,6 +48,6 @@ sudo npm run manual
 sudo npm run autopilot
 ```
 
-... or you could lauch both on two console to ibrid command your robot.
+... or you could launch both on two console to ibrid command your robot.
 
 
